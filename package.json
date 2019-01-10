@@ -1,0 +1,9 @@
+{
+  "name": "footer-pushed-issue-android-chrome",
+  "version": "0.1.0",
+  "private": "true",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "latest"
+  }
+}
