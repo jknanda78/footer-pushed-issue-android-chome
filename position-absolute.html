@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>Footer absolute pushed up on Android-Chrome when keyboard appears</title>
+  <style type="text/css">
+    html, body {
+      height: 100%;
+      font-size: 1em;
+      margin: 0;
+      padding: 0;
+    }
+
+    div, h1, header, footer, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      min-height: 100%;
+      margin-bottom: -38px;
+      background-color: aqua;
+    }
+
+    .container header {
+      background-color: blueviolet;
+    }
+
+    .container form {
+      min-height: 100px;
+      margin: 0 5px;
+      padding: 5px;
+      background-color: beige;
+    }
+
+    .footer {
+      position: relative;
+    }
+
+    footer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 5px 0;
+      background-color: bisque;
+    }
+
+    footer p {
+      padding: 5px 0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Here goes the header...</h1>
+      </header>
+      <section>
+        <p>Here goes the content...</p>
+        <form name="login" novalidate>
+          <legend>Login Form</legend>
+          <p>
+            <label for="email">Username</label>
+            <input type="email" name="email" id="email" />
+          </p>
+          <p>
+            <button type="button" name="submit">Submit</button>
+          </p>
+        </form>
+      </section>
+    </div>
+    <div class="footer">
+      <footer>
+          <p>Here goes the footer...</p>
+      </footer>
+    </div>
+  </body>
+</html>
